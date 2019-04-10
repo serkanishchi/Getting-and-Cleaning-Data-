@@ -28,7 +28,7 @@ if(!dir.exists("./UCI HAR Dataset"))
 trainSubject<-read.table(file = "./UCI HAR Dataset/train/subject_train.txt")
 trainX<-read.table(file = "./UCI HAR Dataset/train/X_train.txt")
 trainy<-read.table(file = "./UCI HAR Dataset/train/y_train.txt")
-## Combine subject, features and label columns of the train set in a one table
+## Combine subject, label, and features columns of the train set in a one table
 train<-cbind(trainSubject, trainy, trainX)
 ## Read test set fragments 
 testSubject<-read.table(file = "./UCI HAR Dataset/test/subject_test.txt")
