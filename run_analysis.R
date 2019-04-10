@@ -1,4 +1,4 @@
-## run_analysis.R script file, getting dataset from  
+## run_analysis.R script file, getting Human Activity Recognition Using Smarphones dataset from  
 ## https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 ## and unzip files to a local directory and does the following
 ## 1. Merges the training and the test sets to create one data set
