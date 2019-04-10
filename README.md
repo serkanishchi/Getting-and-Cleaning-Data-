@@ -8,7 +8,7 @@ These instructions will provide you a step by step guide on how to get and tidy 
 
 ### Load necessary libraries
 Load necessary libraries for cleaning, processing, and manipulating data.
-```R
+```Rscript
 library(tidyr)
 library(dplyr)
 ```
