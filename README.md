@@ -93,7 +93,7 @@ columnNames<-gsub("^t", "Time", columnNames)
 columnNames<-gsub("^f", "Frequency", columnNames)
 columnNames<-gsub(".std", "StandartDeviation", columnNames)
 columnNames<-gsub(".mean", "Mean", columnNames)
-columnNames<-gsub("Acc", "Accelerometer", columnNames)
+columnNames<-gsub("Acc", "Acceleration", columnNames)
 columnNames<-gsub("Mag", "Magnitude", columnNames)
 columnNames<-gsub("Gyro", "Gyroscope", columnNames)
 ```
