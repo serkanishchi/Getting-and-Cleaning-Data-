@@ -13,13 +13,10 @@ library(tidyr)
 library(dplyr)
 
 ## Download the dataset and unzip files to a local directory if doesn't exist 
-if(!dir.exists("./UCI HAR Dataset"))
-{
-    fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-    dir.create("./UCI HAR Dataset")
-    download.file(fileURL, "UCI HAR Dataset.zip")
-    unzip("./UCI HAR Dataset.zip")
-}
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+dir.create("./UCI HAR Dataset")
+download.file(fileURL, "UCI HAR Dataset.zip")
+unzip("./UCI HAR Dataset.zip")
 
 ## 1. Merges the training and the test sets to create one data set.
 ## Read training and test sets which are contains 

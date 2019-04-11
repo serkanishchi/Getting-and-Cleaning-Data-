@@ -14,15 +14,12 @@ library(dplyr)
 ```
 
 ### Download the dataset
-Download the dataset and unzip files to a local directory if doesn't exist.
+Download the dataset and unzip files to a local directory.
 ```
-if(!dir.exists("./UCI HAR Dataset"))
-{
-    fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-    dir.create("./UCI HAR Dataset")
-    download.file(fileURL, "UCI HAR Dataset.zip")
-    unzip("./UCI HAR Dataset.zip")
-}
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+dir.create("./UCI HAR Dataset")
+download.file(fileURL, "UCI HAR Dataset.zip")
+unzip("./UCI HAR Dataset.zip")
 ```
 
 ### Merge the training and the test sets to create one data set
@@ -105,7 +102,7 @@ Set the descriptive column names for the dataset.
 names(dataset)<-columnNames
 ```
 
-### Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+### Create a second, independent tidy data set with the average of each variable for each activity and each subject
 Group the dataset by subject ID and activity and calculate mean for all subgroups. 
 ```
 secondDataset<-dataset %>%
